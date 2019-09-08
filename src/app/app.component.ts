@@ -29,7 +29,9 @@ export class AppComponent {
     { title: 'Walk dog', dateAdded: new Date().toString() }
   ];
 
-  public cancelled: Todo[] = [];
+  public cancelled: Todo[] = [
+    { title: 'Get', dateAdded: new Date().toString() },
+  ];
 
   drop(event: CdkDragDrop<Todo[]>) {
     console.log(event);
